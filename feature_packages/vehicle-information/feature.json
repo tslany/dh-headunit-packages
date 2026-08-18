@@ -1,0 +1,295 @@
+{
+  "_comment": [
+    "Description: Adds Fuel Economy and live Climate pages to the Vehicle menu.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-feature/v1",
+  "revision": 1,
+  "requires_features": [],
+  "requires_byte_patches": [],
+  "conflicts": [],
+  "components": [
+    {
+      "id": "fuel-runtime",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/lib/libFE.so",
+      "payload": "payload/app/lib/libFE.so",
+      "bytes": 19052,
+      "sha256": "86d87a5ac1d7f17ca7f07b8b99ca8c06b0e516419e9f4717d3209a31d2567748",
+      "mode": "0755",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-home-runtime",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/lib/libVH.so",
+      "payload": "payload/app/lib/libVH.so",
+      "bytes": 20948,
+      "sha256": "15e64fbd35c2cdb3918093627cfff519331a521b7a96dcee8a3e3ced49153e7b",
+      "mode": "0755",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "fuel-home-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_FuelEconomy.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_FuelEconomy.qml",
+      "bytes": 21699,
+      "sha256": "11b517b7ba295d2d619e9bd685ffcddfc09e16e0a11c577195541a960f0b5856",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "home-wrapper-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_Home.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_Home.qml",
+      "bytes": 23159,
+      "sha256": "aceaf07e292835ac0e1264f57d56f43bf0339dd5da62f04b105bd0aa8efcad64",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-submenu-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_Vehicle.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_Vehicle.qml",
+      "bytes": 8586,
+      "sha256": "97d15bd3c39b88c717e6d230bddf84054182c18792ef1d23e83b6c1bbd91401a",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-curved-list-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleCurvedList.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleCurvedList.qml",
+      "bytes": 30311,
+      "sha256": "5b82a7801cf0650ff0064a84eaca4e4e5e4cb0b79520c5acf983ea6cbbbbf765",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-delegate-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleI.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleI.qml",
+      "bytes": 16447,
+      "sha256": "992abdd6ef28f550062727d87c3ee7f88ec9dad24523a096695803ab5d7a7c97",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-list-qml",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleList.qml",
+      "payload": "payload/app/share/AppHomeMenu/qml/DHAVN_AppHomeScreen_VehicleList.qml",
+      "bytes": 920,
+      "sha256": "34e2f5aea62b038cce852bd87f872a6f4a45cbf33b9fc227ab14adc4a61798e5",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-180-d",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_180_vehicle_d.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_180_vehicle_d.png",
+      "bytes": 17458,
+      "sha256": "4e162b4a49fd0c53c53185dd0c58b8819c4835dbfebe95951973fb5298bb10fb",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-180-f",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_180_vehicle_f.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_180_vehicle_f.png",
+      "bytes": 26695,
+      "sha256": "749013ef204b083026b78c3eb7042f9143f84eacb45eaf3d3919602da1bd25fb",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-180-n",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_180_vehicle_n.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_180_vehicle_n.png",
+      "bytes": 20163,
+      "sha256": "3f3745a9a992ffd4406a9211237f6b80bf2de01c9d8b3767f7e341c6be54ca0c",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-180-p",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_180_vehicle_p.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_180_vehicle_p.png",
+      "bytes": 23771,
+      "sha256": "3ea1b1148f003d55383af23cc6dae09e48e0c10bab583fe846fbac0d1eed4f7c",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-196-d",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_196_vehicle_d.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_196_vehicle_d.png",
+      "bytes": 20025,
+      "sha256": "d038280095a04b414ef1d206bdb52eb6a38c9c6e8b9b8bff5720be4357769178",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-196-f",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_196_vehicle_f.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_196_vehicle_f.png",
+      "bytes": 30704,
+      "sha256": "b751a87abd677a66a900cc15c7da545e9668b18671f2d71b9237d833b50391b0",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-196-n",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_196_vehicle_n.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_196_vehicle_n.png",
+      "bytes": 23357,
+      "sha256": "3ac19bcba01be32a93ceeedd46e4110cab4523487eca71b07eea30c486ce9033",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-196-p",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_196_vehicle_p.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_196_vehicle_p.png",
+      "bytes": 27360,
+      "sha256": "94b8b04ebd8f98a717dbaf0b9c9f5495cca77424337b934b2ab3e3aaa5c9d6fb",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-234-d",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_234_vehicle_d.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_234_vehicle_d.png",
+      "bytes": 24850,
+      "sha256": "19fc8ffb8d17dc47665303b887138d4f7cbdd890a364b091ee4c81152c7b3a2a",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-234-f",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_234_vehicle_f.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_234_vehicle_f.png",
+      "bytes": 36844,
+      "sha256": "4867e42618c671b035a627aa1cd7deca3fee358945fa27d65a321bdff7c2c9d5",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-234-n",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_234_vehicle_n.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_234_vehicle_n.png",
+      "bytes": 28618,
+      "sha256": "c6cecf35571b4e88a08356dd67bce8d901f6bb8a3aa1711e06aa5d4671a701d0",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "vehicle-icon-234-p",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/share/images/AppHome/main/ico_home_234_vehicle_p.png",
+      "payload": "payload/app/share/images/AppHome/main/ico_home_234_vehicle_p.png",
+      "bytes": 33844,
+      "sha256": "39f66b3607a42617cd10ee0667c8e2fd38cd121c72354bed9fc931fe0eaf665d",
+      "mode": "0644",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "fuel-appinfo-loader",
+      "type": "byte-patch-one-of",
+      "variants": [
+        {
+          "id": "eu-na",
+          "path": "patches/vehicle-information-appinfo-loader-eu-na.json",
+          "bytes": 784,
+          "sha256": "0387c9d1359b8496b2c502167362bb739dd2e04047cc4a4712853c43b74d6717"
+        },
+        {
+          "id": "kdm",
+          "path": "patches/vehicle-information-appinfo-loader-kdm.json",
+          "bytes": 754,
+          "sha256": "6a116d8e81ede88a5509c94e01b6a1f1dda7a08c437952a1a7d9593e3c9ef2a6"
+        }
+      ]
+    },
+    {
+      "id": "regional-home",
+      "type": "byte-patch-one-of",
+      "variants": [
+        {
+          "id": "eu",
+          "path": "patches/vehicle-home-eu.json",
+          "bytes": 1124,
+          "sha256": "aaeadd5df6c0f9beb9cfe9ca13ebbf32b6492c24afbbab72a17aa90537b2c4b7"
+        },
+        {
+          "id": "kdm",
+          "path": "patches/vehicle-home-kdm.json",
+          "bytes": 4781,
+          "sha256": "34d747ca6435975cf39ae616e81137971a4545ca54cd58e85ba791687b1dcb34"
+        },
+        {
+          "id": "na",
+          "path": "patches/vehicle-home-na.json",
+          "bytes": 4780,
+          "sha256": "e07b583458d41373ecbc360d84854dc0fb17535e83f76df2fbd9299ec8e485ab"
+        }
+      ]
+    }
+  ]
+}

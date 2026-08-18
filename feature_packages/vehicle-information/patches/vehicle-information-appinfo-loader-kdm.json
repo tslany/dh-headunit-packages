@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Description: Loads the Fuel Economy collector into KDM AppInfo.",
+    "Tested on: Not yet vehicle-tested."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/bin/AppInfo",
+      "source": {
+        "bytes": 428748,
+        "sha256": "6eb2fead0a8da69a66dc9c57d449e89af5c355f21b50a0300906392e34a95a28"
+      },
+      "hunks": [
+        {
+          "file_offset": 17588,
+          "expected_hex": "5f4a765f5265676973746572436c617373657300",
+          "replacement_hex": "2f6170702f6c69622f6c696246452e736f000000"
+        },
+        {
+          "file_offset": 426316,
+          "expected_hex": "0000000000000000",
+          "replacement_hex": "01000000c8000000"
+        }
+      ]
+    }
+  ]
+}

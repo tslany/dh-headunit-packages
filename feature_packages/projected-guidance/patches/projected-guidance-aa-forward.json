@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Description: Forwards Android Auto guidance to Projected Guidance.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/lib/liblinux-head-unit.so",
+      "source": {
+        "bytes": 193380,
+        "sha256": "f75a1048ce42c800e966a001612ea5dafcac50c4975470368f68266118850b56"
+      },
+      "hunks": [
+        {
+          "file_offset": 61392,
+          "expected_hex": "5531c98d2c248d6424d8897dfc8b450c8b7d08895df4e895e9ffff81c3810802008b108b078975f88db37750ffff8b40fc8b400480382a8954240c0f94c18974240801c8894424048d83074fffff",
+          "replacement_hex": "5589e583ec18897dfc895df48975f88b45088b40048b401485c07427ff7520ff751cff75146841414e31ff75108b550cff3289e183ec08890424894c24048b10ff5234e93d000000909090909090"
+        },
+        {
+          "file_offset": 61552,
+          "expected_hex": "5531d289e553e805e9ffff81c3f10702008d6424dc8b45088b008b40fc8b400480382a0f94c201d08b5510",
+          "replacement_hex": "5531d289e55383ec088b45088b40048b401485c0740c8b10ff7510ff750c50ff52308d65fce92c00000090"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Description: Loads the Fuel Economy collector into EU/NA AppInfo.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/bin/AppInfo",
+      "source": {
+        "bytes": 252512,
+        "sha256": "cd23c668b442c6fe4fafa88fe1664b815ce1bef4b6db6de3153afe9853c8bb88"
+      },
+      "hunks": [
+        {
+          "file_offset": 15699,
+          "expected_hex": "5f4a765f5265676973746572436c617373657300",
+          "replacement_hex": "2f6170702f6c69622f6c696246452e736f000000"
+        },
+        {
+          "file_offset": 250180,
+          "expected_hex": "0000000000000000",
+          "replacement_hex": "0100000097000000"
+        }
+      ]
+    }
+  ]
+}

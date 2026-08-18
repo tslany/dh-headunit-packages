@@ -1,0 +1,173 @@
+{
+  "_comment": [
+    "Description: Adds Vehicle Home to NA AppHomeMenu.",
+    "Tested on: Not yet vehicle-tested."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/bin/AppHomeMenu",
+      "source": {
+        "bytes": 421328,
+        "sha256": "16bba400dd8073067aa90b602884341bcd97a06944120c53e0b5d9c1fdb75cf8"
+      },
+      "hunks": [
+        {
+          "file_offset": 10362,
+          "expected_hex": "5f4a765f5265676973746572436c617373657300",
+          "replacement_hex": "2f6170702f6c69622f6c696256482e736f000000"
+        },
+        {
+          "file_offset": 166089,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 166164,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 167514,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 167589,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 169233,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 169308,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 171503,
+          "expected_hex": "c7670908",
+          "replacement_hex": "cbd70908"
+        },
+        {
+          "file_offset": 171578,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 173222,
+          "expected_hex": "c7670908",
+          "replacement_hex": "cbd70908"
+        },
+        {
+          "file_offset": 173297,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 175492,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 175567,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 177211,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 177286,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 179074,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 179149,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 180793,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 180868,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 183661,
+          "expected_hex": "c7670908",
+          "replacement_hex": "cbd70908"
+        },
+        {
+          "file_offset": 183736,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 185380,
+          "expected_hex": "c7670908",
+          "replacement_hex": "cbd70908"
+        },
+        {
+          "file_offset": 185455,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 188248,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 188323,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 189967,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 190042,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 198809,
+          "expected_hex": "ba670908",
+          "replacement_hex": "1adc0908"
+        },
+        {
+          "file_offset": 198884,
+          "expected_hex": "2d000000",
+          "replacement_hex": "00000000"
+        },
+        {
+          "file_offset": 318908,
+          "expected_hex": "2f6170702f73686172652f417070486f6d654d656e752f716d6c2f444841564e5f417070486f6d6553637265656e5f4d61696e2e716d6c00",
+          "replacement_hex": "2f6170702f73686172652f417070486f6d654d656e752f716d6c2f444841564e5f417070486f6d6553637265656e5f486f6d652e716d6c00"
+        },
+        {
+          "file_offset": 418136,
+          "expected_hex": "0000000000000000",
+          "replacement_hex": "010000002e0b0000"
+        }
+      ]
+    }
+  ]
+}

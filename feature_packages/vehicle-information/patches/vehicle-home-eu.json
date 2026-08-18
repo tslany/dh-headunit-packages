@@ -1,0 +1,33 @@
+{
+  "_comment": [
+    "Description: Loads Vehicle Home into AppHomeMenu on EU units.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/bin/AppHomeMenu",
+      "source": {
+        "bytes": 456560,
+        "sha256": "0d4a84f26458c5dc728f19de659e6ef4abfedba4e8357aa88c70d53a44184fc3"
+      },
+      "hunks": [
+        {
+          "file_offset": 10382,
+          "expected_hex": "5f4a765f5265676973746572436c617373657300",
+          "replacement_hex": "2f6170702f6c69622f6c696256482e736f000000"
+        },
+        {
+          "file_offset": 349404,
+          "expected_hex": "2f6170702f73686172652f417070486f6d654d656e752f716d6c2f444841564e5f417070486f6d6553637265656e5f4d61696e2e716d6c00",
+          "replacement_hex": "2f6170702f73686172652f417070486f6d654d656e752f716d6c2f444841564e5f417070486f6d6553637265656e5f486f6d652e716d6c00"
+        },
+        {
+          "file_offset": 453380,
+          "expected_hex": "0000000000000000",
+          "replacement_hex": "010000002e0b0000"
+        }
+      ]
+    }
+  ]
+}

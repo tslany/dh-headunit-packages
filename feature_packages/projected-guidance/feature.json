@@ -1,0 +1,59 @@
+{
+  "_comment": [
+    "Description: Shows Android Auto and CarPlay guidance on the instrument cluster/HUD and gives active projection priority over stock navigation.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-feature/v1",
+  "revision": 1,
+  "requires_features": [],
+  "requires_byte_patches": [
+    "carplay-iap2-short-write",
+    "carplay-role-switch-race",
+    "carplay-startup-ready-races",
+    "carplay-transport-ready-per-instance",
+    "projection-usb-control-timeouts"
+  ],
+  "conflicts": [],
+  "components": [
+    {
+      "id": "runtime-library",
+      "type": "file",
+      "operation": "create",
+      "target": "/app/lib/libPG.so",
+      "payload": "payload/app/lib/libPG.so",
+      "bytes": 89364,
+      "sha256": "1539e83fc02741943f0205c186833aaba80684133556953e07f664005d1e8d60",
+      "mode": "0755",
+      "uid": 500,
+      "gid": 500
+    },
+    {
+      "id": "aa-forwarding",
+      "type": "byte-patch",
+      "path": "patches/projected-guidance-aa-forward.json",
+      "bytes": 1170,
+      "sha256": "1a96bffcded50866a05a9e71cbc7745b4b7891415e1cab2156231c64d587ac08"
+    },
+    {
+      "id": "appprojection-loader",
+      "type": "byte-patch",
+      "path": "patches/projected-guidance-appprojection-loader.json",
+      "bytes": 784,
+      "sha256": "446fdc12b9ed1b5132a4e172a35b9b714a0da3d5741ffca68725bcb4f93cff9d"
+    },
+    {
+      "id": "iap2-loader",
+      "type": "byte-patch",
+      "path": "patches/projected-guidance-iap2-loader.json",
+      "bytes": 777,
+      "sha256": "26decd550911893816ed3b80b775bbcc832523d92d67c27b5cab866626a10110"
+    },
+    {
+      "id": "qcan-loader",
+      "type": "byte-patch",
+      "path": "patches/projected-guidance-qcan-loader.json",
+      "bytes": 825,
+      "sha256": "213b21622537a5be4cf4311ec211f579bfb2b8acb82d0fb522bc2681da908d49"
+    }
+  ]
+}

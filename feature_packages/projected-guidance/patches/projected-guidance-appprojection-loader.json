@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Description: Loads Projected Guidance into AppProjection.",
+    "Tested on: 2017_Genesis_G80_EU (DHPE.EUR.SOP.03.013.20230825)."
+  ],
+  "schema": "dh-headunit-application-patch/v2",
+  "targets": [
+    {
+      "path": "/app/bin/AppProjection",
+      "source": {
+        "bytes": 1274484,
+        "sha256": "743bfad2bbcfaa03bdc941f84a1105f6f27831cba4bc749d414e6a0da7004e65"
+      },
+      "hunks": [
+        {
+          "file_offset": 19867,
+          "expected_hex": "5f4a765f5265676973746572436c617373657300",
+          "replacement_hex": "2f6170702f6c69622f6c696250472e736f000000"
+        },
+        {
+          "file_offset": 1271224,
+          "expected_hex": "0000000000000000",
+          "replacement_hex": "01000000f7130000"
+        }
+      ]
+    }
+  ]
+}
